@@ -8,6 +8,8 @@ class User < ApplicationRecord
 
   attachment :profile_image
 
+  has_many :favorites, dependent: :destroy
+
   validates :name,
   uniqueness: true, length: { in: 2..20 }
 
