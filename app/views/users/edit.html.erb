@@ -20,11 +20,11 @@
 						    </ul>
 						  </div>
 			<% end %>
-				<label for="name">Name</label>
+				<h4>Name</h4>
 				<%= f.text_field :name, autofocus: true %>
-				<label for="profile_image">Image</label>
+				<h4>Image</h4>
 				<%= f.attachment_field :profile_image, autofocus: true %>
-				<label for="introduction">Introduction</label>
+				<h4>Introduction</h4>
 				<%= f.text_field :introduction, autofocus: true %>
 				<%= f.submit 'Update User' %>
 				<% end %>
