@@ -12,22 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20200113045644) do
 
-  create_table "book_comments", force: :cascade do |t|
-    t.text "comment"
-    t.integer "user_id"
-    t.integer "book_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "bookcomments", force: :cascade do |t|
-    t.text "comment"
-    t.integer "user_id"
-    t.integer "book_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "books", force: :cascade do |t|
     t.text "title"
     t.text "body"
